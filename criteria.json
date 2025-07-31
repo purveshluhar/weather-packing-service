@@ -1,0 +1,38 @@
+{
+  "Hot": {
+    "temp_max": "",
+    "temp_min": 60,
+    "main": "Clear",
+    "packing-list": ["sunscreen", "sun hat", "sandals", "sunglasses"]
+  },
+  "Rain": {
+    "temp_max": "",
+    "temp_min": "",
+    "main": "Rain",
+    "packing-list": ["rain jacket", "umbrella", "rain boots"]
+  },
+  "Drizzle": {
+    "temp_max": "",
+    "temp_min": "",
+    "main": "Drizzle",
+    "packing-list": ["rain jacket", "umbrella", "rain boots"]
+  },
+  "Cold": {
+    "temp_max": 32,
+    "temp_min": "",
+    "main": "",
+    "packing-list": ["coat", "gloves", "winter hat", "socks"]
+  },
+  "Snow": {
+    "temp_max": "",
+    "temp_min": "",
+    "main": "Snow",
+    "packing-list": ["coat", "snow pants", "snow boots"]
+  },
+  "Cloudy": {
+    "temp_max": "",
+    "temp_min": "",
+    "main": "Cloud",
+    "packing-list": ["light jacket"]
+  }
+}
