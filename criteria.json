@@ -3,36 +3,42 @@
     "temp_max": "",
     "temp_min": 60,
     "main": "Clear",
-    "packing-list": ["sunscreen", "sun hat", "sandals", "sunglasses"]
+    "packing-list": ["sunscreen", "sun hat", "sandals", "sunglasses"],
+    "message": "It's going to be"
   },
   "Rain": {
     "temp_max": "",
     "temp_min": "",
     "main": "Rain",
-    "packing-list": ["rain jacket", "umbrella", "rain boots"]
+    "packing-list": ["rain jacket", "umbrella", "rain boots"],
+    "message": "It's going to"
   },
   "Drizzle": {
     "temp_max": "",
     "temp_min": "",
     "main": "Drizzle",
-    "packing-list": ["rain jacket", "umbrella", "rain boots"]
+    "packing-list": ["rain jacket", "umbrella", "rain boots"],
+    "message": "It's going to"
   },
   "Cold": {
     "temp_max": 32,
     "temp_min": "",
     "main": "",
-    "packing-list": ["coat", "gloves", "winter hat", "socks"]
+    "packing-list": ["coat", "gloves", "winter hat", "socks"],
+    "message": "It's going to be"
   },
   "Snow": {
     "temp_max": "",
     "temp_min": "",
     "main": "Snow",
-    "packing-list": ["coat", "snow pants", "snow boots"]
+    "packing-list": ["coat", "snow pants", "snow boots"],
+    "message": "Be prepared for"
   },
   "Cloudy": {
     "temp_max": "",
     "temp_min": "",
     "main": "Cloud",
-    "packing-list": ["light jacket"]
+    "packing-list": ["light jacket"],
+    "message": "It's going to be"
   }
 }
