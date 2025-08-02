@@ -1,8 +1,8 @@
 # Weather Packing Microservice
 The microservice will respond with a weather summary and provide packing recommendations based on the trip's weather conditions received from the main program.
-***
+
 ## Requesting Data
-***
+
 To request data, send a list request using ZeroMQ communication pipeline 
 with the following format:
 ### Request Format
@@ -13,10 +13,11 @@ with the following format:
 ]
 ```
 
-- `"temp_max` : Max temperature of the day
-- `"temp_min` : Min temperature of the day
-- `"main` : Weather condition of the day
-- `{}`: Above required parameters for every day of the duration of the trip.
+- `"temp_max` : Max temperature of the day (°F or °C)
+- `"temp_min` : Min temperature of the day (°F or °C)
+- `"main` : Weather condition of the day (e.g., "Clear", "Rain", "Snow", 
+  "Drizzle", "Clouds")
+- The request is a list of daily weather objects, for each day of the trip.
 #### Example Code
 ```
 import zmq
@@ -33,19 +34,19 @@ weather_data = [
 
 socket.send_json(weather_data)
 ```
-***
+
 ## Receiving Data
 The response from the microservice will be in string format containing 
 weather summary and packing list for the duration of the trip or an invalid 
 message.
 ### Response Format
-#### Valid Example
+#### Example - Valid Request Data
 ```
 "There will be some days of hot and some days of drizzle. Don't forget to 
 pack your sunscreen, sun hat, sandals, sunglasses, rain jacket, umbrella, and 
 rain boots."
 ```
-#### Invalid Example
+#### Example - Invalid Request Data
 ```
 "Received Invalid Data!"
 ```
@@ -67,7 +68,7 @@ socket.send_json(weather_data)
 
 message = socket.recv()
 ```
-***
+
 ## Setup Instructions
 ### 1. Clone the Repo
 ```
