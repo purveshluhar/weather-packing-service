@@ -102,3 +102,7 @@ weather type
 ```
 python3 main.py &
 ```
+### 6. To run tests
+```
+python3 -m tests.test_client
+```
