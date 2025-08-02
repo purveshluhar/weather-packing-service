@@ -8,9 +8,9 @@ Includes:
 
 def summarize_weather(data: bytearray, criteria: dict):
     """
-    Processes the given weather data from the client during the trip and
-    summarizes it according to the criteria defined.
-    :param data: arr, Data requested from the client
+    Processes the given weather data of the trip and summarizes it according to
+    the criteria defined.
+    :param data: arr, Weather data of the trip
     :param criteria: list, Includes criteria which defines packing list for
     weather type
     :return: arr, Contains all weather defined per criteria

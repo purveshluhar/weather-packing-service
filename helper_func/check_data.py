@@ -20,20 +20,20 @@ def check_data(data:bytearray):
         value:dict
         # Check the received data
         if len(value) != len(req_key):
-            message += "Invalid Data, Try again!"
+            message += "Received Invalid Data!"
             return False, message
         else:
             for key, cvalue in value.items():
                 if key not in req_key:
-                    message = "Invalid Keys, Try again!"
+                    message = "Received Invalid Keys, Try again!"
                     return False, message
                 if key == 'temp_max' or key == 'temp_min':
                     if not isinstance(cvalue, (int, float)):
-                        message = "Invalid Values, Try again!"
+                        message = "Received Invalid Values, Try again!"
                         return False, message
                 elif key == 'main':
                     if not isinstance(cvalue, str):
-                        message = "Invalid Values, Try again!"
+                        message = "Received Invalid Values, Try again!"
                         return False, message
 
     return True, message
