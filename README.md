@@ -91,12 +91,12 @@ the criteria.json file.
 This file defines the matching criteria for different weather types and 
 what packing recommendations to generate.
 
--`"temp_max"`: Maximum temperature threshold for the weather type 
--`"temp_min"`: Minimum temperature threshold for the weather type
--`"main"`: Expected weather condition (e.g., "Clear", "Rain", "Snow", 
+- `"temp_max"`: Maximum temperature threshold for the weather type 
+- `"temp_min"`: Minimum temperature threshold for the weather type
+- `"main"`: Expected weather condition (e.g., "Clear", "Rain", "Snow", 
   "Drizzle", "Clouds")
--`"packing-list"`: A list of recommended items to pack for this weather type
--`"message"`: A custom message that will be sent to the client for this 
+- `"packing-list"`: A list of recommended items to pack for this weather type
+- `"message"`: A custom message that will be sent to the client for this 
 weather type
 ### 5. Run Microservice in Background
 ```
