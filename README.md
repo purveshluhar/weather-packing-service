@@ -6,12 +6,12 @@ The microservice will respond with a weather summary and provide packing recomme
 To request data, send a list request using ZeroMQ communication pipeline 
 with the following format:
 ### Request Format
-<pre>
+```
 [
     {'temp_max': 80, 'temp_min': 61, 'main': "Clear"}, 
     {'temp_max': 80, 'temp_min': 61, 'main': "Drizzle"}
 ]
-</pre>
+```
 
 - `"temp_max` : Max temperature of the day
 - `"temp_min` : Min temperature of the day
