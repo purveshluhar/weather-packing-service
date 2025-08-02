@@ -39,7 +39,7 @@ def run_service():
             continue
 
         # Load the criteria_data JSON file
-        with open("criteria.json", "r") as fd:
+        with open("config/criteria.json", "r") as fd:
             criteria_data = json.load(fd)
 
         # Generate the weather summary
