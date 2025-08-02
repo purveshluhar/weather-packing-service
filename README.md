@@ -70,8 +70,7 @@ message = socket.recv()
 ```
 
 ## UML Sequence Diagram
-![Sequence diagram showing valid and invalid request flow] (config/"UML 
-Diagram.png")
+![Sequence diagram showing valid and invalid request flow](images/UML%20Diagram.png)
 
 ## Setup Instructions
 ### 1. Clone the Repo
