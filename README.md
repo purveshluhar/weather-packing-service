@@ -69,6 +69,10 @@ socket.send_json(weather_data)
 message = socket.recv()
 ```
 
+## UML Sequence Diagram
+![Sequence diagram showing valid and invalid request flow] (config/"UML 
+Diagram.png")
+
 ## Setup Instructions
 ### 1. Clone the Repo
 ```
