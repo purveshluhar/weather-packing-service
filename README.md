@@ -85,7 +85,20 @@ PORT_SERVICE=5600
 ```
 pip install python-dotenv
 ```
-### 4. Run Microservice in Background
+### 4. Optional: Update criteria.json
+If you need to modify or extend the weather-based packing logic, you can update 
+the criteria.json file.
+This file defines the matching criteria for different weather types and 
+what packing recommendations to generate.
+
+-`"temp_max"`: Maximum temperature threshold for the weather type 
+-`"temp_min"`: Minimum temperature threshold for the weather type
+-`"main"`: Expected weather condition (e.g., "Clear", "Rain", "Snow", 
+  "Drizzle", "Clouds")
+-`"packing-list"`: A list of recommended items to pack for this weather type
+-`"message"`: A custom message that will be sent to the client for this 
+weather type
+### 5. Run Microservice in Background
 ```
 python3 main.py &
 ```
