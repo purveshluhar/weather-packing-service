@@ -46,7 +46,7 @@ def message_generator(weather_arr: bytearray, packing_dict: dict,
             else:
                 weather_str +=  "."
     else:
-        weather_str += (f"{criteria[weather_arr[0]]["message"]} "
+        weather_str += (f"{criteria[weather_arr[0]]['message']} "
                         f"{weather_arr[0].lower()} during your trip.")
 
     packing_str = "Don't forget to pack your"
